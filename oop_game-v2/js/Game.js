@@ -11,6 +11,7 @@ class Game {
       new Phrase("El mejor pais de Chile"),
       new Phrase("Praise the Sun"),
       new Phrase("Vae victis"),
+      new Phrase("Te amo moshita bella")
     ];
     this.activePhrase = null;
   }
@@ -57,7 +58,9 @@ class Game {
    * Displays game over message
    * @param {boolean} gameWon - whether or not the user won the game
    */
-  gameOver(gameWon) {};
+  gameOver(gameWon) {
+    
+  };
 
   handleInteraction() {
     const qwerty = document.querySelectorAll('qwerty');
