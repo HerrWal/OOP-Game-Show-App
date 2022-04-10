@@ -28,6 +28,7 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
+  color: #14213d;
 }
 
 li, ol, ul {
@@ -166,7 +167,7 @@ button {
   display: flex;
   flex-direction: column;
   position: fixed;
-  color: #FFFFFF;
+  color: #14213d;
   justify-content: center;
   top: 0;
   bottom: 0;
@@ -176,19 +177,30 @@ button {
 }
 
 .title {
-  color: #FFF;
+  color: #fca311;
 }
 
 .start {
-  background-color: #3a3f58;
+  background-color: #14213d;
 }
 
 .start a {
   color: #fff;
 }
 
+#btn__reset {
+  color: #111;
+  background: #7b2cbf;
+}
+
+#btn__reset:hover {
+  color: #ffd60a;
+  background: #8338ec;
+  box-shadow: 0 0 50px #8338ec;
+}
+
 .win {
-  background-color: var(--color-win);
+  background-color: #14213d;
 }
 
 .win a {
@@ -196,9 +208,48 @@ button {
 }
 
 .lose {
-  background-color: #f5785f;
+  background-color: #2b2d42;
 }
 
 .lose a {
   color: var(--color-lose);
+}
+
+#game-over-message {
+  color: #ffffff;
+}
+
+.main-container {
+  background: #14213d;
+}
+
+.header {
+  color: #fca311
+}
+
+.key {
+  color: #111;
+  background: #8d99ae;
+}
+
+.key:hover {
+  color: #ffd60a;
+  background: #8338ec;
+  box-shadow: 0 0 50px #8338ec;
+}
+.chosen {
+  color: #ffd60a;
+  background: #8338ec;
+}
+
+.wrong {
+  color: #8d99ae;
+  background: #2b2d42;
+}
+
+.show {
+  color: #ffd60a;
+  background: #8338ec;
+  border: 1px solid #3a86ff;
+  box-shadow: 5px 5px 25px #8338ec
 }
