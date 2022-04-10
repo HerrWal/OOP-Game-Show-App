@@ -4,6 +4,7 @@
 
 let game;
 
+// Start and reset button handler
 document.getElementById("btn__reset").addEventListener("click", () => {
   document.querySelector("#phrase > ul").innerHTML = "";
   const keys = document.querySelectorAll(".key");
@@ -18,12 +19,16 @@ document.getElementById("btn__reset").addEventListener("click", () => {
   game = new Game();
   game.startGame();
 });
+
+// handleInteraction handler
 const qwerty = document.getElementById("qwerty");
 qwerty.addEventListener("click", () => {
   if (event.target.tagName === "BUTTON") {
     game.handleInteraction(event.target);
   }
 });
+
+// keyboard handler, to handle associated onscreen buttons with the keys on the keyboard
 document.addEventListener("keydown", () => {
   const keys = document.querySelectorAll(".key");
   for (let key of keys) {
