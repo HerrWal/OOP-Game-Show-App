@@ -32,7 +32,8 @@ qwerty.addEventListener("click", () => {
 document.addEventListener("keydown", () => {
   const keys = document.querySelectorAll(".key");
   for (let key of keys) {
-    if(key.textContent === event.key) {
+    if(key.textContent === event.key &&
+      !key.disabled) {
       game.handleInteraction(key);
     }
   }
