@@ -31,7 +31,7 @@ class Game {
     document.getElementById("overlay").style.display = "none";
     const phrase = this.getRandomPhrase();
     this.activePhrase = phrase;
-    return phrase.addPhraseToDisplay();
+    return this.activePhrase.addPhraseToDisplay();
   }
   /**
    * Checks for winning move
@@ -98,20 +98,3 @@ class Game {
     }
   }
 }
-
-// const qwerty = document.querySelectorAll("qwerty");
-//     const keys = document.querySelectorAll(".key");
-//     const letters = document.querySelectorAll(".letter");
-//     qwerty.addEventListener("click", () => {
-//       const selectedKey = event.target;
-//       selectedKey.setAttribute("disabled", "");
-//       for (const letter of letters) {
-//         if (selectedKey.textContent === letter.textContent) {
-//           console.log("is a match!");
-//           selectedKey.classList.add("chosen");
-//         } else if (selectedKey.textContent !== letter.textContent) {
-//           console.log("Popo!");
-//           selectedKey.classList.add("wrong");
-//         }
-//       }
-//     });
