@@ -28,7 +28,7 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
-  color: #14213d;
+  background-color: #14213d;
 }
 
 li, ol, ul {
